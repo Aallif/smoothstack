@@ -190,14 +190,19 @@ p{
 }
 
 .card button{
+    background-image: linear-gradient( #6927b0, #6928b1,#c4a8df);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
     text-transform: uppercase;
     border: 2px solid#6728b2;
-    color: #6728b2;
+    color: #6a27b0;
     padding: 10px 20px;
     margin: 26px 24px;
     font-size: 15px;
     font-weight: 700;
+
 }
+
 
 .thiredsecone{
     background-color: #ebecf6;
@@ -220,27 +225,60 @@ p{
 
 .sliderb{
     background-color: #ffffff;
+    margin: 0px 20px;
 }
 .slider p{
     padding-top: 20px;
     color: #000000;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
 }
 
 .slidercont{
-    padding-top: 50px;
+    padding: 53px 50px;
+}
+
+.sliderimg img{
+    width: 100%;
+    height: 293px;
+
 }
 
 .slider{
     padding-bottom: 125px;
+    position: relative;
 }
 
-.unihead{
+.slider .unihead p{
     font-size: 18px;
-    font-weight: 400;
-    padding-bottom: 54px;
+    font-weight: 600;
+    /* padding-bottom: 54px; */
 }
+
+.slick-next:before{
+    content: url('../images/right-slider-arrow-removebg-preview.png');
+    background-image: url("");
+    position: absolute;
+    top: -60px;
+    /* background-color: #3444da; */
+}
+
+.slick-prev:before{
+    content: url('../images/right-slider-arrow-removebg-preview.png');
+    position: absolute;
+    top: 60px;
+
+
+}
+
+.slick-prev{
+    transform: rotate(180deg);
+
+
+}
+  
+
+
 
 .latest{
     padding-top: 240px;
@@ -248,6 +286,7 @@ p{
 }
 
 .lapblue{
+    background-image:url("../images/laptopblue.png");
     background-color: #6d22a8;
 }
 
@@ -281,11 +320,13 @@ p{
 }
 
 .wcard1{
+    box-shadow:inset 0px 0px 20px 12px #f6f6f6;
     padding: 33px 30px;
     background-color: #ffffff;
     position: absolute;
     top: -113px;
     right: 275px;
+
 
 }
 
@@ -307,6 +348,8 @@ p{
     position: absolute;
     top: 79px;
     right: -44px;
+    box-shadow:inset 0px 0px 20px 12px #f6f6f6;
+
 
 }
 
@@ -328,6 +371,7 @@ p{
     position: absolute;
     bottom: -114px;
     right: 275px;
+    box-shadow:inset 0px 0px 20px 12px #f6f6f6;
 
 }
 
@@ -351,6 +395,10 @@ p{
     padding-top: 60px;
 }
 
+.social img{
+    padding: 8px;
+}
+
 .footer h5{
     font-size: 16px;
     font-weight: 700;
@@ -368,13 +416,30 @@ ul{
     padding-left: 0px;
 }
 
+a{
+    text-decoration: none;
+    color: none;
+}
+
+.licot ul{
+    display: block; 
+    /* padding: 10px; */
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff; 
+}
+
+.col-md-2{
+    margin-right: 30px;
+} 
+
 .footcont{
     padding-top: 60px;
     padding-bottom: 90px;
 }
 .banbtn2 {
     text-transform: uppercase;
-    padding: 18px 26px;
+    padding: 15px 26px;
     font-size: 13px;
     font-weight: 400;
     border: hidden;
@@ -421,7 +486,7 @@ ul{
 
     .navbar {
         padding-top: 40px;
-        flex-direction: row-reverse;
+        flex-direction: row-reverse !important;
     }
     
 
